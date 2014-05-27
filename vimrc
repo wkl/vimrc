@@ -37,5 +37,9 @@ cnoremap <C-B> <Left>
 map <C-\> :tab split<CR>:exec("tag ".expand("<cword>"))<CR>
 set tags=./tags;/
 
+" Tag List
+let Tlist_Inc_Winwidth = 0
+nnoremap <S-t> :TlistToggle<CR>
+
 " Ack
 nmap <leader>a <Esc>:Ack!
