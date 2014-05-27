@@ -1,13 +1,17 @@
 runtime bundle/vim-pathogen/autoload/pathogen.vim
 execute pathogen#infect()
 
+" color
+syntax enable
+set background=light
+let g:solarized_termcolors=256
+colorscheme solarized
+
 " set leader key
 let mapleader = ","
 
 " fast reloading of the .vimrc
 map <silent> <leader>ss :source ~/.vimrc<cr>
-" fast editing of .vimrc
-map <silent> <leader>ee :e ~/.vimrc<cr>
 
 " buffers
 nnoremap <S-b> :buffers<CR>:buffer<Space>
@@ -22,10 +26,13 @@ map <C-h> <C-w>h
 " nerdtree
 autocmd vimenter * if !argc() | NERDTree | endif
 map <D-e> :NERDTreeToggle<CR>
-map <leader>n :NERDTreeToggle<CR>
+map <leader>e :NERDTreeToggle<CR>
 
 " Maps more bash-like keys to command line mode (colon mode)
 cnoremap <C-A> <Home>
 cnoremap <C-F> <Right>
 cnoremap <C-B> <Left>
 
+" Tags
+map <C-\> :tab split<CR>:exec("tag ".expand("<cword>"))<CR>
+set tags=./tags;/
