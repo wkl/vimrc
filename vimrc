@@ -24,7 +24,7 @@ map <C-l> <C-w>l
 map <C-h> <C-w>h
 
 " nerdtree
-autocmd vimenter * if !argc() | NERDTree | endif
+" autocmd vimenter * if !argc() | NERDTree | endif
 map <D-e> :NERDTreeToggle<CR>
 map <leader>e :NERDTreeToggle<CR>
 
@@ -36,3 +36,6 @@ cnoremap <C-B> <Left>
 " Tags
 map <C-\> :tab split<CR>:exec("tag ".expand("<cword>"))<CR>
 set tags=./tags;/
+
+" Ack
+nmap <leader>a <Esc>:Ack!
