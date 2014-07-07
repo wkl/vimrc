@@ -43,3 +43,5 @@ nnoremap <S-t> :TlistToggle<CR>
 
 " Ack
 nmap <leader>a <Esc>:Ack!
+
+set modeline
