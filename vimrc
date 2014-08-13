@@ -27,6 +27,7 @@ map <C-h> <C-w>h
 " autocmd vimenter * if !argc() | NERDTree | endif
 map <D-e> :NERDTreeToggle<CR>
 map <leader>e :NERDTreeToggle<CR>
+map <leader>n :NERDTreeFind<CR>
 
 " Maps more bash-like keys to command line mode (colon mode)
 cnoremap <C-A> <Home>
