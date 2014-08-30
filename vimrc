@@ -1,11 +1,17 @@
 runtime bundle/vim-pathogen/autoload/pathogen.vim
 execute pathogen#infect()
 
-" color
+" color and font
 syntax enable
 set background=light
 let g:solarized_termcolors=256
 colorscheme solarized
+
+if has('gui_running')
+    set background=light
+    colorscheme solarized
+    set gfn=Monaco:h13
+endif
 
 " set leader key
 let mapleader = ","
