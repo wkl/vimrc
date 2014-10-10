@@ -52,12 +52,6 @@ nnoremap <S-t> :TlistToggle<CR>
 " Ack
 nmap <leader>a <Esc>:Ack!
 
-" clang-format
-let g:clang_format#code_style = "google"
-let g:clang_format#detect_style_file = 1
-autocmd FileType c,cpp,objc nnoremap <buffer><Leader>c :<C-u>ClangFormat<CR>
-autocmd FileType c,cpp,objc vnoremap <buffer><Leader>c :ClangFormat<CR>
-
 set modeline
 
 " vimdiff
