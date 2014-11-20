@@ -57,7 +57,7 @@ set modeline
 " vimdiff
 set diffopt+=iwhite
 set diffexpr=DiffW()
-function DiffW()
+function! DiffW()
   let opt = ""
    if &diffopt =~ "icase"
      let opt = opt . "-i "
