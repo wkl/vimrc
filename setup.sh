@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 
 # fetch submodule content
 git submodule init
