@@ -13,6 +13,11 @@ if has('gui_running')
     set gfn=Monaco:h13
 endif
 
+" disable mouse in console
+if !has('gui_running')
+    set mouse-=a
+endif
+
 " set leader key
 let mapleader = ","
 
