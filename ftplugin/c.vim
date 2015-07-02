@@ -1,6 +1,6 @@
 " offical plugin
-map <C-[> :pyf ~/.vim/ftplugin/clang-format.py<cr>
-imap <C-[> <c-o>:pyf ~/.vim/ftplugin/clang-format.py<cr>
+" map <C-[> :pyf ~/.vim/ftplugin/clang-format.py<cr>
+" imap <C-[> <c-o>:pyf ~/.vim/ftplugin/clang-format.py<cr>
 
 " vim-clang-format plugin
 let g:clang_format#code_style = "google"
