@@ -72,3 +72,6 @@ function! DiffW()
    silent execute "!diff -a --binary " . opt .
      \ v:fname_in . " " . v:fname_new .  " > " . v:fname_out
 endfunction
+
+" gitgutter
+set updatetime=1000
