@@ -40,6 +40,7 @@ map <D-e> :NERDTreeToggle<CR>
 map <leader>e :NERDTreeToggle<CR>
 map <leader>n :NERDTreeFind<CR>
 let NERDTreeQuitOnOpen=1
+set splitright
 
 " Maps more bash-like keys to command line mode (colon mode)
 cnoremap <C-A> <Home>
@@ -74,4 +75,7 @@ function! DiffW()
 endfunction
 
 " gitgutter
-set updatetime=1000
+set updatetime=2000
+" uncomment to disable gitgutter
+" autocmd vimenter * GitGutterDisable
+map <leader>g :GitGutterToggle<CR>
